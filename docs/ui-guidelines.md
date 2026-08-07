@@ -33,7 +33,8 @@
 - 基本単位：8px
 - 小さい余白：8px
 - 要素間：16px
-- セクション間：24px〜32px
+- 24px: Mobileのセクション間
+- 32px: Desktopのセクション間
 
 ## 5. Border Radius
 
