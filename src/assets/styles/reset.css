@@ -49,7 +49,7 @@
   * Prevents layout shift caused by the appearance or disappearance of the scrollbar.
   * Starting with Chrome 145, specifying `scrollbar-gutter: stable` will cause vw to be calculated without considering the scrollbar, which will also prevent horizontal scrolling.
   */
-  scrollbar-gutter: stable;
+  /* scrollbar-gutter: stable; */
 
   /* Suppresses the tap highlight on iOS. */
   -webkit-tap-highlight-color: transparent;

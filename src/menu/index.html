@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>workout-tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Menu | Workout Tracker</title>
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/styles/reset.css">
     <link rel="stylesheet" href="/assets/styles/base.css">
@@ -15,5 +15,38 @@
     <script type="module" src="/assets/scripts/main.js"></script>
   </head>
   <body>
+    <a class="SkipLink" href="#main">本文へ移動</a>
+    <div id="contents" class="Contents">
+      <header id="header" class="Header">
+        <div class="Header__logo">
+          <a class="Header__home" href="/">{DUMMY}</a>
+        </div>
+        <nav id="navigation" class="Navigation" aria-label="グローバルナビゲーション">
+          <ul class="Navigation__list">
+            <li class="Navigation__item">
+              <a href="/" class="Navigation__link">
+                <span class="Navigation__text">Home</span>
+              </a>
+            </li>
+            <li class="Navigation__item">
+              <a href="/menu/" class="Navigation__link" aria-current="page">
+                <span class="Navigation__text">Menu</span>
+              </a>
+            </li>
+            <li class="Navigation__item">
+              <a href="/records/" class="Navigation__link">
+                <span class="Navigation__text">Records</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main id="main" class="Main" tabindex="-1"></main>
+      <footer id="footer" class="Footer">
+        <div class="Footer__inner">
+          <p class="Footer__copy">&copy; 2026 {DUMMY}.</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
