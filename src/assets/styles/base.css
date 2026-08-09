@@ -108,7 +108,7 @@ body.is-open {
 
 button {
   appearance: none;
-  border: transparent;
+  border-color: transparent;
   background: none;
   padding: 0;
   font: inherit;
