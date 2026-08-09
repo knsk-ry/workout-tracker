@@ -16,11 +16,13 @@
   </head>
   <body>
     <a class="SkipLink" href="#main">本文へ移動</a>
+
     <div id="contents" class="Contents">
       <header id="header" class="Header">
         <div class="Header__logo">
           <a class="Header__home" href="/">{DUMMY}</a>
         </div>
+
         <nav id="navigation" class="Navigation" aria-label="グローバルナビゲーション">
           <ul class="Navigation__list">
             <li class="Navigation__item">
@@ -41,7 +43,170 @@
           </ul>
         </nav>
       </header>
-      <main id="main" class="Main" tabindex="-1"></main>
+
+      <main id="main" class="Main" tabindex="-1">
+         <h1 class="Heading --Level1">共通パーツ一覧</h1>
+        <!-- Component Parts:Section -->
+        <section class="Section">
+          <div class="Section__inner">
+            <!-- Contents Start -->
+            <h2 class="Heading --Level2">H2見出し</h2>
+            <div class="TextBlock">
+              <p class="Text">テキストブロック内のテキストサンプル</p>
+            </div>
+            <!-- Contents End -->
+          </div>
+        </section>
+
+        <div class="Section">
+          <div class="Section__inner">
+            <!-- Contents Start -->
+            <div class="TextBlock">
+              <p class="Text">テキストブロック内のテキストサンプル</p>
+            </div>
+            <!-- Contents End -->
+          </div>
+        </div>
+
+        <!-- Component Parts:Title -->
+        <h1 class="Heading --Level1">H1見出し</h1>
+
+        <h2 class="Heading --Level2">H2見出し</h2>
+
+        <h3 class="Heading --Level3">H3見出し</h3>
+
+        <!-- Component Parts:Text -->
+        <p class="Text">テキストサンプル</p>
+        <p class="Text --Sm">小さなテキストサンプル</p>
+        <p class="Text --Lg">大きなテキストサンプル</p>
+        <p class="Text --Error">エラーメッセージ ※`--Sm` や `--Lg` と組み合わせて使用可能</p>
+
+        <div class="TextBlock">
+          <p class="Text">テキストブロック内のテキストサンプル</p>
+        </div>
+        <div class="TextBlock --SpaceLg">
+          <p class="Text">余白の大きいテキストブロック内のテキストサンプル</p>
+        </div>
+
+        <!-- Component Parts:Column Layout -->
+        <div class="ColumnLayout --MaxCol2">
+          <p class="Text">カラムレイアウトの1カラム目</p>
+          <p class="Text">カラムレイアウトの2カラム目</p>
+          <p class="Text">カラムレイアウトの3カラム目</p>
+        </div>
+
+        <div class="ColumnLayout --MaxCol3">
+          <p class="Text">カラムレイアウトの1カラム目</p>
+          <p class="Text">カラムレイアウトの2カラム目</p>
+          <p class="Text">カラムレイアウトの3カラム目</p>
+          <p class="Text">カラムレイアウトの4カラム目</p>
+        </div>
+
+        <div class="ColumnLayout --MaxCol4">
+          <p class="Text">カラムレイアウトの1カラム目</p>
+          <p class="Text">カラムレイアウトの2カラム目</p>
+          <p class="Text">カラムレイアウトの3カラム目</p>
+          <p class="Text">カラムレイアウトの4カラム目</p>
+          <p class="Text">カラムレイアウトの5カラム目</p>
+        </div>
+
+        <div class="ColumnLayout --Flexible">
+          <p class="Text">カラムレイアウトの1カラム目</p>
+          <p class="Text">カラムレイアウトの2カラム目</p>
+          <p class="Text">カラムレイアウトの3カラム目</p>
+          <p class="Text">カラムレイアウトの4カラム目</p>
+          <p class="Text">カラムレイアウトの5カラム目</p>
+        </div>
+
+        <!-- Component Parts:Button -->
+        <button type="button" class="Button">
+          <span class="Button__text">デフォルトボタン</span>
+        </button>
+        
+        <button type="button" class="Button --Primary">
+          <span class="Button__text">プライマリボタン</span>
+        </button>
+        
+        <button type="button" class="Button --Secondary">
+          <span class="Button__text">セカンダリボタン</span>
+        </button>
+
+        <button type="button" class="Button --IconAdd">
+          <span class="Button__text">アイコン付きボタン ※`--Primary` や `--Secondary` と組み合わせて使用可能</span>
+        </button>
+
+        <button type="button" class="Button --IconEdit">
+          <span class="Button__text">アイコン付きボタン ※`--Primary` や `--Secondary` と組み合わせて使用可能</span>
+        </button>
+
+        <button type="button" class="Button --IconCalendar">
+          <span class="Button__text">アイコン付きボタン ※`--Primary` や `--Secondary` と組み合わせて使用可能</span>
+        </button>
+
+        <!-- Component Parts:Card -->
+        <div class="Card">
+          <div class="TextBlock">
+            <p class="Text">カード内のテキストサンプル</p>
+          </div>
+        </div>
+
+        <section class="Card">
+          <h2 class="Heading --Level2">H2見出し</h2>
+          <div class="TextBlock">
+            <p class="Text">カード内のテキストサンプル</p>
+          </div>
+        </section>
+
+        <article class="Card">
+          <h2 class="Heading --Level2">H2見出し</h2>
+          <div class="TextBlock">
+            <p class="Text">カード内のテキストサンプル</p>
+          </div>
+        </article>
+
+        <!-- Component Parts:Checkbox -->
+        <div class="Checkbox">
+          <label for="checkbox" class="Checkbox__label">チェックボックス</label>
+          <input type="checkbox" id="checkbox" name="{Dummy}" class="Checkbox__input">
+        </div>
+
+        <!-- Component Parts:Input -->
+        <div class="Input">
+          <label for="input" class="Input__label">テキスト入力</label>
+          <input type="text" id="input" name="{Dummy}" class="Input__text" placeholder="テキスト入力">
+        </div>
+
+        <!-- Component Parts:Select -->
+        <div class="Select">
+          <label for="category" class="Select__label">カテゴリー</label>
+          <select id="category" name="{Dummy}" class="Select__input">
+            <option>選択肢1</option>
+            <option>選択肢2</option>
+            <option>選択肢3</option>
+          </select>
+        </div>
+
+        <!-- Component Parts:Modal -->
+        <dialog id="modal" class="Modal" aria-labelledby="modalTitle">
+          <div class="Modal__inner">
+            <h2 id="modalTitle" class="Modal__title">モーダル見出し</h2>
+            <p class="Text">モーダルコンテンツ</p>
+            <button type="button" class="Modal__close">
+              <span class="Modal__closeText">閉じる</span>
+            </button>
+          </div>
+        </dialog>
+
+        <!-- Component Parts:Accordion -->
+        <details class="Accordion">
+          <summary class="Accordion__summary">アコーディオンタイトル</summary>
+          <div class="Accordion__content">
+            <p class="Text">アコーディオンコンテンツ</p>
+          </div>
+        </details>
+
+      </main>
+
       <footer id="footer" class="Footer">
         <div class="Footer__inner">
           <p class="Footer__copy">&copy; 2026 {DUMMY}.</p>
