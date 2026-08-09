@@ -77,6 +77,7 @@
 
     /* Block Sizes */
     --navigation-block-size: 2.75rem; /* 44px */
+    --icon-block-size: 1.25rem; /* 20px */
 
     @media (min-width: 64.0625rem) {
       --font-size-sm: 0.875rem; /* 14px */
