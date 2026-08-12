@@ -22,6 +22,26 @@
 }
 
 /* ------------------------------
+ *  Text
+ */
+
+.Text + .Text {
+  margin-block-end: var(--spacing-md);
+}
+
+:where(.Text).--Sm {
+  font-size: var(--font-size-sm);
+}
+
+:where(.Text).--Lg {
+  font-size: var(--font-size-lg);
+}
+
+:where(.Text).--Error {
+  color: var(--error-color);
+}
+
+/* ------------------------------
  *  Button
  */
 
