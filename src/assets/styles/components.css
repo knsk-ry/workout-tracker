@@ -25,8 +25,8 @@
  *  Text
  */
 
-.Text + .Text {
-  margin-block-end: var(--spacing-sm);
+.Text:not(:first-child) {
+  margin-block-start: var(--spacing-sm);
 }
 
 :where(.Text).--Sm {
