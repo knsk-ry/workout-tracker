@@ -1,4 +1,27 @@
 /* ------------------------------
+ *  Heading
+ */
+
+.Heading {
+  font-weight: var(--font-weight-bold);
+}
+
+:where(.Heading).--Level1 {
+  margin-block-end: var(--spacing-lg);
+  font-size: var(--font-size-heading-lv1);
+}
+
+:where(.Heading).--Level2 {
+  margin-block-end: var(--spacing-md);
+  font-size: var(--font-size-heading-lv2);
+}
+
+:where(.Heading).--Level3 {
+  margin-block-end: var(--spacing-md);
+  font-size: var(--font-size-heading-lv3);
+}
+
+/* ------------------------------
  *  Button
  */
 
