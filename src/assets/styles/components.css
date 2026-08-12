@@ -42,6 +42,18 @@
 }
 
 /* ------------------------------
+ *  Text Block
+ */
+
+.TextBlock:not(:first-child) {
+  margin-block-start: var(--spacing-md);
+}
+
+:where(.TextBlock).--SpaceLg:not(:first-child) {
+  margin-block-start: var(--spacing-lg);
+}
+
+/* ------------------------------
  *  Button
  */
 
