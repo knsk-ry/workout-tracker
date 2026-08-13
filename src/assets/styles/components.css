@@ -119,3 +119,56 @@
 :where(.Button.--Primary) .Button__text {
   color: var(--primary-color-light);
 }
+
+/* ------------------------------
+ *  Column
+ */
+
+.ColumnLayout {
+  display: block grid;
+  gap: var(--spacing-md);
+  
+  @media (min-width: 64.0625rem) {
+    gap: var(--spacing-lg);
+  }
+}
+
+.ColumnLayout:not(:first-child) {
+  margin-block-start: var(--spacing-md);
+  
+  @media (min-width: 64.0625rem) {
+    margin-block-start: var(--spacing-lg);
+  }
+}
+
+:where(.ColumnLayout).--MaxCol2,
+:where(.ColumnLayout).--MaxCol3,
+:where(.ColumnLayout).--MaxCol4 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 37rem) {
+  :where(.ColumnLayout).--MaxCol2,
+  :where(.ColumnLayout).--MaxCol3,
+  :where(.ColumnLayout).--MaxCol4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 56rem) {
+  :where(.ColumnLayout).--MaxCol3,
+  :where(.ColumnLayout).--MaxCol4 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 75rem) {
+  :where(.ColumnLayout).--MaxCol4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+:where(.ColumnLayout).--Flexible {
+  display: block flex;
+  flex-wrap: wrap;
+}
