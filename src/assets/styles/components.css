@@ -124,6 +124,21 @@
  *  Column
  */
 
+.Card {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--background-color-surface);
+  border: 1px solid var(--border-color-primary);
+  border-radius: var(--border-radius-md);
+  
+  @media (min-width: 64.0625rem) {
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+}
+
+/* ------------------------------
+ *  Column
+ */
+
 .ColumnLayout {
   display: block grid;
   gap: var(--spacing-md);
