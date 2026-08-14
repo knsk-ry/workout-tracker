@@ -55,7 +55,7 @@
   background-color: var(--background-color-surface);
   box-shadow: var(--shadow-bottom-sm);
 
-  @media (min-width: 64.0625rem) {
+  @media (width >= 64.0625rem) {
     grid-template-columns: auto 1fr;
     align-items: center;
     padding-inline: max(var(--spacing-xl), env(safe-area-inset-left))
@@ -84,7 +84,7 @@
   box-shadow: var(--shadow-top-sm);
   z-index: var(--z-index-navigation);
 
-  @media (min-width: 64.0625rem) {
+  @media (width >= 64.0625rem) {
     position: static;
     min-block-size: auto;
     min-inline-size: auto;
@@ -98,7 +98,7 @@
   display: block grid;
   grid-template-columns: repeat(3, 1fr);
 
-  @media (min-width: 64.0625rem) {
+  @media (width >= 64.0625rem) {
     grid-template-columns: repeat(3, auto);
     gap: var(--spacing-md);
   }
@@ -109,7 +109,7 @@
 }
 
 .Navigation__item:not(:first-child) {
-  @media (min-width: 64.0625rem) {
+  @media (width >= 64.0625rem) {
     padding-inline-start: var(--spacing-md);
   }
 }
@@ -123,7 +123,7 @@
   inline-size: 2px;
   background-color: var(--border-color-surface);
 
-  @media (min-width: 64.0625rem) {
+  @media (width >= 64.0625rem) {
     inset-block-start: 20px;
     block-size: calc(var(--navigation-block-size) - 40px);
   }
@@ -145,7 +145,7 @@
   font-weight: var(--font-weight-bold);
   text-align: center;
 
-  @media (min-width: 64.0625rem) {
+  @media (width >= 64.0625rem) {
     inline-size: auto;
     padding-inline: var(--spacing-md);
     transition:
@@ -179,7 +179,7 @@
   place-items: center;
   padding-block-end: calc(var(--navigation-block-size) + env(safe-area-inset-bottom));
 
-  @media (min-width: 64.0625rem) {
+  @media (width >= 64.0625rem) {
     padding-block-end: 0;
   }
 }

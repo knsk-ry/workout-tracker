@@ -42,13 +42,14 @@
   * Mobile browsers have an algorithm that automatically adjusts font sizes to prevent text from becoming too small.
   * This controls the auto-adjustment feature to prevent unwanted resizing.
   */
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   text-size-adjust: 100%;
 
   /*
   * Prevents layout shift caused by the appearance or disappearance of the scrollbar.
   * Starting with Chrome 145, specifying `scrollbar-gutter: stable` will cause vw to be calculated without considering the scrollbar, which will also prevent horizontal scrolling.
   */
+
   /* scrollbar-gutter: stable; */
 
   /* Suppresses the tap highlight on iOS. */
@@ -348,7 +349,7 @@
 
 :where(input[type="search" i]) {
   /* Remove the rounded corners of search inputs on macOS and normalize the background color. */
-  -webkit-appearance: textfield;
+  appearance: textfield;
 }
 
 @supports (-webkit-touch-callout: none) {

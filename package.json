@@ -9,6 +9,11 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:js:fix": "eslint . --fix",
+    "lint:css:fix": "stylelint \"src/**/*.css\" --fix",
     "format": "prettier . --write",
     "format:check": "prettier . --check"
   },
