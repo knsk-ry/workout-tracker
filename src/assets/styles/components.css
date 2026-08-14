@@ -59,9 +59,9 @@
 
 .Button {
   display: block flex;
+  gap: var(--spacing-sm);
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-sm);
   inline-size: 100%;
   padding: var(--spacing-sm);
   background-color: var(--background-color-surface);
@@ -100,9 +100,9 @@
 }
 
 .Button__icon {
+  flex-shrink: 0;
   inline-size: var(--icon-block-size);
   block-size: var(--icon-block-size);
-  flex-shrink: 0;
   stroke: var(--primary-color);
 }
 
@@ -111,9 +111,9 @@
 }
 
 .Button__text {
-  color: var(--primary-color);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
 }
 
 :where(.Button.--Primary) .Button__text {
@@ -133,10 +133,10 @@
 .Input__label {
   display: block;
   width: fit-content;
-  color: #374151;
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.5;
+  color: #374151;
   cursor: pointer;
 }
 
@@ -144,12 +144,12 @@
   inline-size: 100%;
   min-block-size: 44px;
   padding: var(--spacing-sm) var(--spacing-md);
+  font: inherit;
+  line-height: 1.5;
   color: var(--text-color-base);
   background-color: var(--background-color-surface);
   border: 1px solid var(--primary-color-light);
   border-radius: var(--border-radius-md);
-  font: inherit;
-  line-height: 1.5;
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
@@ -164,16 +164,16 @@
 }
 
 .Input__text:focus {
-  border-color: var(--primary-color);
   outline: none;
+  border-color: var(--primary-color);
   box-shadow: 0 0 0 3px var(--primary-color-light);
 }
 
 /* :disabled のスタイルは後日対応 */
 .Input__text:disabled {
   color: #6b7280;
-  background-color: #f3f4f6;
   cursor: not-allowed;
+  background-color: #f3f4f6;
   opacity: 1;
 }
 
@@ -199,18 +199,18 @@
 }
 
 .Checkbox__label {
-  grid-column: 2;
   grid-row: 1;
-  color: var(--text-color-base);
+  grid-column: 2;
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-base);
+  color: var(--text-color-base);
   cursor: pointer;
 }
 
 .Checkbox__input {
-  grid-column: 1;
   grid-row: 1;
+  grid-column: 1;
   inline-size: var(--icon-block-size);
   block-size: var(--icon-block-size);
   margin: 0;
@@ -245,28 +245,28 @@
 
 .Select__label {
   inline-size: fit-content;
-  color: var(--text-color-base);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-base);
+  color: var(--text-color-base);
   cursor: pointer;
 }
 
 .Select__input {
-  grid-column: 1;
   grid-row: 2;
+  grid-column: 1;
   inline-size: 100%;
   min-block-size: 44px;
   padding-block: var(--spacing-sm);
   padding-inline: var(--spacing-md) calc(var(--spacing-md) + var(--icon-block-size));
+  font: inherit;
+  line-height: var(--line-height-base);
   color: var(--text-color-base);
+  appearance: none;
+  cursor: pointer;
   background-color: var(--background-color-surface);
   border: 1px solid var(--border-color-base);
   border-radius: var(--border-radius-md);
-  font: inherit;
-  line-height: var(--line-height-base);
-  appearance: none;
-  cursor: pointer;
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
@@ -274,16 +274,16 @@
 
 /* 矢印 */
 .Select::after {
-  grid-column: 1;
   grid-row: 2;
+  grid-column: 1;
   place-self: center end;
   inline-size: var(--spacing-sm);
   block-size: var(--spacing-sm);
   margin-inline-end: var(--spacing-md);
-  border-inline-end: 2px solid var(--primary-color);
-  border-block-end: 2px solid var(--primary-color);
-  content: "";
   pointer-events: none;
+  content: "";
+  border-block-end: 2px solid var(--primary-color);
+  border-inline-end: 2px solid var(--primary-color);
   transform: translateY(-25%) rotate(45deg);
 }
 
@@ -292,15 +292,15 @@
 }
 
 .Select__input:focus-visible {
-  border-color: var(--primary-color);
   outline: 3px solid var(--primary-color);
   outline-offset: 1px;
+  border-color: var(--primary-color);
 }
 
 .Select__input:disabled {
   color: var(--text-color-secondary);
-  background-color: var(--primary-color-light);
   cursor: not-allowed;
+  background-color: var(--primary-color-light);
   opacity: 1;
 }
 
@@ -395,9 +395,9 @@
  */
 
 .Modal {
+  inline-size: 80%;
   block-size: 80vh;
   block-size: 80dvh;
-  inline-size: 80%;
 }
 
 .Modal::backdrop {

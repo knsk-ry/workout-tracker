@@ -11,11 +11,11 @@
   place-items: center;
   min-block-size: 2.75rem;
   padding-inline: var(--spacing-md);
+  font-weight: var(--font-weight-bold);
   color: var(--background-color-surface);
+  text-decoration: none;
   background-color: var(--text-color-base);
   border-radius: var(--border-radius-md);
-  font-weight: var(--font-weight-bold);
-  text-decoration: none;
   transform: translateY(calc(-100% - var(--spacing-md) - env(safe-area-inset-top)));
   transition: transform 150ms ease-out;
 
@@ -76,20 +76,20 @@
   position: fixed;
   inset-block-end: 0;
   inset-inline-end: 0;
-  min-block-size: var(--navigation-block-size);
+  z-index: var(--z-index-navigation);
   min-inline-size: 100%;
+  min-block-size: var(--navigation-block-size);
   padding-block-end: env(safe-area-inset-bottom);
   padding-inline: env(safe-area-inset-left) env(safe-area-inset-right);
   background-color: var(--background-color-surface);
   box-shadow: var(--shadow-top-sm);
-  z-index: var(--z-index-navigation);
 
   @media (width >= 64.0625rem) {
     position: static;
-    min-block-size: auto;
     min-inline-size: auto;
-    margin-inline-start: auto;
+    min-block-size: auto;
     padding: 0;
+    margin-inline-start: auto;
     box-shadow: none;
   }
 }
@@ -115,12 +115,12 @@
 }
 
 .Navigation__item:not(:first-child)::before {
-  content: "";
   position: absolute;
   inset-block-start: 10px;
   inset-inline-start: 0;
-  block-size: calc(var(--navigation-block-size) - 20px);
   inline-size: 2px;
+  block-size: calc(var(--navigation-block-size) - 20px);
+  content: "";
   background-color: var(--border-color-surface);
 
   @media (width >= 64.0625rem) {
@@ -139,11 +139,11 @@
   display: block;
   inline-size: calc(100% - 2 * var(--spacing-md));
   padding-block: var(--spacing-xs);
-  border-radius: var(--border-radius-sm);
-  color: var(--primary-color);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
   text-align: center;
+  border-radius: var(--border-radius-sm);
 
   @media (width >= 64.0625rem) {
     inline-size: auto;
@@ -160,14 +160,14 @@
 
 @media (hover: hover) and (pointer: fine) {
   .Navigation__link:hover .Navigation__text {
-    background-color: var(--primary-color);
     color: var(--text-color-surface);
+    background-color: var(--primary-color);
   }
 }
 
 .Navigation__link:focus-visible .Navigation__text {
-  background-color: var(--primary-color);
   color: var(--text-color-surface);
+  background-color: var(--primary-color);
 }
 
 /* ------------------------------

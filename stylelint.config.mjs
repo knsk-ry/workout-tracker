@@ -1,10 +1,16 @@
 /** @type {import("stylelint").Config} */
+import propertyGroups from "stylelint-config-recess-order/groups";
+
 export default {
   extends: ["stylelint-config-standard"],
 
-  ignoreFiles: ["dist/**", "storybook-static/**", "node_modules/**"],
+  plugins: ["stylelint-order"],
 
-  reportDescriptionlessDisables: true,
-  reportInvalidScopeDisables: true,
-  reportNeedlessDisables: true,
+  rules: {
+    "order/properties-order": propertyGroups.map((group) => ({
+      ...group,
+      emptyLineBefore: "always",
+      noEmptyLineBetween: true,
+    })),
+  },
 };
