@@ -2,6 +2,7 @@
 
 import "../src/assets/styles/reset.css";
 import "../src/assets/styles/base.css";
+import "../src/assets/styles/components.css";
 
 const preview = {
   parameters: {
@@ -10,6 +11,10 @@ const preview = {
        color: /(background|color)$/i,
        date: /Date$/i,
       },
+    },
+
+    docs: {
+      codePanel: true,
     },
 
     a11y: {
