@@ -76,18 +76,11 @@ const createButton = ({
     secondary: "--Secondary",
   }[variant];
 
-  const className = [
-    "Button",
-    variantClass,
-  ]
-    .filter(Boolean)
-    .join(" ");
+  const className = ["Button", variantClass].filter(Boolean).join(" ");
 
   const iconHtml = icons[icon] ?? "";
 
-  const iconMarkup = iconHtml
-    ? `\n${indent(iconHtml, 2)}`
-    : "";
+  const iconMarkup = iconHtml ? `\n${indent(iconHtml, 2)}` : "";
 
   if (element === "link") {
     return `<a
@@ -98,9 +91,7 @@ const createButton = ({
 </a>`;
   }
 
-  const disabledAttr = disabled
-    ? "\n  disabled"
-    : "";
+  const disabledAttr = disabled ? "\n  disabled" : "";
 
   return `<button
   type="button"
@@ -135,21 +126,12 @@ const meta = {
 
     variant: {
       control: "select",
-      options: [
-        "default",
-        "primary",
-        "secondary",
-      ],
+      options: ["default", "primary", "secondary"],
     },
 
     icon: {
       control: "select",
-      options: [
-        "none",
-        "add",
-        "edit",
-        "calendar",
-      ],
+      options: ["none", "add", "edit", "calendar"],
     },
 
     disabled: {

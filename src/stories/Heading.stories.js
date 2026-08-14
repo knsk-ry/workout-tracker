@@ -1,7 +1,4 @@
-const createHeading = ({
-  element = "h1",
-  label = "見出しテキスト",
-}) => {
+const createHeading = ({ element = "h1", label = "見出しテキスト" }) => {
   switch (element) {
     case "h2":
       return `<h2 class="Heading --Level2">
@@ -14,10 +11,10 @@ const createHeading = ({
         </h3>`;
 
     case "h1":
-    default: 
+    default:
       return `<h1 class="Heading --Level1">
           <span class="Heading__text">${label}</span>
-        </h1>`;   
+        </h1>`;
   }
 };
 

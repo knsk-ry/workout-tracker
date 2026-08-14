@@ -1,7 +1,4 @@
-const createText = ({
-  fontSize,
-  label = "テキスト",
-}) => {
+const createText = ({ fontSize, label = "テキスト" }) => {
   return `<p class="Text ${fontSize}">${label}</p>`;
 };
 

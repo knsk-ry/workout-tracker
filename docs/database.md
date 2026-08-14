@@ -2,10 +2,10 @@
 
 ## Databases
 
-| Database | Purpose |
-|---|---|
+| Database     | Purpose                                      |
+| ------------ | -------------------------------------------- |
 | Workout Menu | トレーニング・ストレッチのメニューを管理する |
-| Daily Record | 日ごとの実施内容や睡眠時間を記録する |
+| Daily Record | 日ごとの実施内容や睡眠時間を記録する         |
 
 ## Workout Menu
 
@@ -21,16 +21,16 @@ Notion APIの認証情報はサーバーレスAPIの環境変数として管理�
 
 ### Properties
 
-| Property | Type | Required | Description |
-|---|---|---:|---|
-| Name | Title | Yes | メニュー名 |
-| Category | Select | Yes | Workout / Stretch |
-| Sets | Number | No | セット数 |
-| Reps | Number | No | 回数 |
-| Scheduled Days | Multi-select | No | 実施予定の曜日（Mon / Tue / Wed / Thu / Fri / Sat / Sun） |Sat |
-| Is Active | Checkbox | Yes | 現在使用するメニューか |
-| Display Order | Number | No | 表示順 |
-| Memo | Text | No | 補足 |
+| Property       | Type         | Required | Description                                               |
+| -------------- | ------------ | -------- | --------------------------------------------------------- |
+| Name           | Title        | Yes      | メニュー名                                                |
+| Category       | Select       | Yes      | Workout / Stretch                                         |
+| Sets           | Number       | No       | セット数                                                  |
+| Reps           | Number       | No       | 回数                                                      |
+| Scheduled Days | Multi-select | No       | 実施予定の曜日（Mon / Tue / Wed / Thu / Fri / Sat / Sun） | Sat |
+| Is Active      | Checkbox     | Yes      | 現在使用するメニューか                                    |
+| Display Order  | Number       | No       | 表示順                                                    |
+| Memo           | Text         | No       | 補足                                                      |
 
 ### Schedule Rules
 
@@ -48,16 +48,16 @@ Notion APIの認証情報はサーバーレスAPIの環境変数として管理�
 
 ### Properties
 
-| Property | Type | Required | Description |
-|---|---|---:|---|
-| Date | Date | Yes | 記録日 |
-| Completed Menu | Relation | No | 実施したメニュー |
-| Sleep Start | Date | No | 入眠時刻 |
-| Sleep End | Date | No | 起床時刻 |
-| Meal Breakfast | Text | No | 食事内容 |
-| Meal Lunch | Text | No | 食事内容 |
-| Meal Dinner | Text | No | 食事内容 |
-| Memo | Text | No | その日のメモ |
+| Property       | Type     | Required | Description      |
+| -------------- | -------- | -------: | ---------------- |
+| Date           | Date     |      Yes | 記録日           |
+| Completed Menu | Relation |       No | 実施したメニュー |
+| Sleep Start    | Date     |       No | 入眠時刻         |
+| Sleep End      | Date     |       No | 起床時刻         |
+| Meal Breakfast | Text     |       No | 食事内容         |
+| Meal Lunch     | Text     |       No | 食事内容         |
+| Meal Dinner    | Text     |       No | 食事内容         |
+| Memo           | Text     |       No | その日のメモ     |
 
 ### Record Rules
 
@@ -80,11 +80,11 @@ Notion APIの認証情報はサーバーレスAPIの環境変数として管理�
 
 ## Screen Mapping
 
-| Screen | Read | Write |
-|---|---|---|
-| Dashboard | Workout Menu / Daily Record | Daily Record |
-| Training Menu | Workout Menu | Workout Menu |
-| Record | Daily Record | なし |
+| Screen        | Read                        | Write        |
+| ------------- | --------------------------- | ------------ |
+| Dashboard     | Workout Menu / Daily Record | Daily Record |
+| Training Menu | Workout Menu                | Workout Menu |
+| Record        | Daily Record                | なし         |
 
 ## System Architecture
 
