@@ -121,6 +121,73 @@
 }
 
 /* ------------------------------
+ *  Input
+ */
+
+.Input {
+  display: block grid;
+  gap: var(--spacing-sm);
+  inline-size: 100%;
+}
+
+.Input__label {
+  display: block;
+  width: fit-content;
+
+  color: #374151;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5;
+
+  cursor: pointer;
+}
+
+.Input__text {
+  inline-size: 100%;
+  min-block-size: 44px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--text-color-base);
+  background-color: var(--background-color-surface);
+  border: 1px solid var(--primary-color-light);
+  border-radius: var(--border-radius-md);
+  font: inherit;
+  line-height: 1.5;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.Input__text::placeholder {
+  color: var(--text-color-secondary);
+}
+
+.Input__text:hover:not(:disabled) {
+  border-color: var(--primary-color);
+}
+
+.Input__text:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--primary-color-light);
+}
+
+/* :disabled のスタイルは後日対応 */
+.Input__text:disabled {
+  color: #6b7280;
+  background-color: #f3f4f6;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.Input__text[aria-invalid="true"] {
+  border-color: var(--error-color);
+}
+
+.Input__text[aria-invalid="true"]:focus {
+  box-shadow: 0 0 0 3px var(--error-color);
+}
+
+/* ------------------------------
  *  Column
  */
 
