@@ -26,23 +26,11 @@
   */
   line-height: 1.5;
 
-  /* Remove space when punctuation marks are adjacent, and also remove leading spaces in a line. */
-  text-spacing-trim: trim-start;
-
-  /* Improves readability by inserting a small space between Japanese and alphanumeric characters. */
-  text-autospace: normal;
-
   /* Prevents misreading by applying strict line-breaking rules. */
   line-break: strict;
 
   /* Wraps English words mid-word. Specifying `anywhere` also prevents content from overflowing in layouts like `flex` or `grid`. */
   overflow-wrap: anywhere;
-
-  /*
-  * Mobile browsers have an algorithm that automatically adjusts font sizes to prevent text from becoming too small.
-  * This controls the auto-adjustment feature to prevent unwanted resizing.
-  */
-  text-size-adjust: 100%;
 
   /*
   * Prevents layout shift caused by the appearance or disappearance of the scrollbar.
@@ -53,6 +41,18 @@
 
   /* Suppresses the tap highlight on iOS. */
   -webkit-tap-highlight-color: transparent;
+
+  /* Improves readability by inserting a small space between Japanese and alphanumeric characters. */
+  text-autospace: normal;
+
+  /*
+  * Mobile browsers have an algorithm that automatically adjusts font sizes to prevent text from becoming too small.
+  * This controls the auto-adjustment feature to prevent unwanted resizing.
+  */
+  text-size-adjust: 100%;
+
+  /* Remove space when punctuation marks are adjacent, and also remove leading spaces in a line. */
+  text-spacing-trim: trim-start;
 }
 
 :where(body) {
@@ -81,6 +81,7 @@
   * @see https://html.spec.whatwg.org/#sections-and-headings
   */
   margin-block: 0.67em;
+
   font-size: 2em;
 }
 
@@ -146,14 +147,14 @@
 }
 
 :where(pre) {
+  /* Set to `no-autospace` as it can cause misalignment with monospaced fonts. */
+  text-autospace: no-autospace;
+
   /*
   * Since `text-spacing-trim` can affect spacing in `<pre>` elements even with its initial value, the final rendering may depend on the user's font settings.
   * To ensure consistent alignment, `space-all` is explicitly specified and inheritance is prevented.
   */
   text-spacing-trim: space-all;
-
-  /* Set to `no-autospace` as it can cause misalignment with monospaced fonts. */
-  text-autospace: no-autospace;
 }
 
 @media print {
@@ -212,8 +213,9 @@
   */
   text-decoration-line: underline;
   text-decoration-style: dotted;
-  text-decoration-inset: auto;
+
   cursor: help;
+  text-decoration-inset: auto;
 }
 
 :where(time) {
@@ -444,6 +446,7 @@
 
   /* The following default styles are often unnecessary, so they are reset. */
   margin-inline: unset;
+
   border: unset;
 }
 
@@ -487,6 +490,7 @@
   * Disabling block-direction scroll chaining is recommended.
   */
   overscroll-behavior-block: contain;
+
   border: unset;
 }
 

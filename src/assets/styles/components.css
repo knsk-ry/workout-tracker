@@ -8,16 +8,19 @@
 
 :where(.Heading).--Level1 {
   margin-block-end: var(--spacing-lg);
+
   font-size: var(--font-size-heading-lv1);
 }
 
 :where(.Heading).--Level2 {
   margin-block-end: var(--spacing-md);
+
   font-size: var(--font-size-heading-lv2);
 }
 
 :where(.Heading).--Level3 {
   margin-block-end: var(--spacing-md);
+
   font-size: var(--font-size-heading-lv3);
 }
 
@@ -62,11 +65,14 @@
   gap: var(--spacing-sm);
   align-items: center;
   justify-content: center;
+
   inline-size: 100%;
   padding: var(--spacing-sm);
+
   background-color: var(--background-color-surface);
   border: 2px solid var(--border-color-base);
   border-radius: var(--border-radius-md);
+
   transition: opacity 150ms ease-out;
 
   @media (prefers-reduced-motion: reduce) {
@@ -101,8 +107,10 @@
 
 .Button__icon {
   flex-shrink: 0;
+
   inline-size: var(--icon-block-size);
   block-size: var(--icon-block-size);
+
   stroke: var(--primary-color);
 }
 
@@ -127,16 +135,20 @@
 .Input {
   display: block grid;
   gap: var(--spacing-sm);
+
   inline-size: 100%;
 }
 
 .Input__label {
   display: block;
+
   width: fit-content;
+
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.5;
   color: #374151;
+
   cursor: pointer;
 }
 
@@ -144,12 +156,15 @@
   inline-size: 100%;
   min-block-size: 44px;
   padding: var(--spacing-sm) var(--spacing-md);
+
   font: inherit;
   line-height: 1.5;
   color: var(--text-color-base);
+
   background-color: var(--background-color-surface);
   border: 1px solid var(--primary-color-light);
   border-radius: var(--border-radius-md);
+
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
@@ -165,6 +180,7 @@
 
 .Input__text:focus {
   outline: none;
+
   border-color: var(--primary-color);
   box-shadow: 0 0 0 3px var(--primary-color-light);
 }
@@ -172,7 +188,9 @@
 /* :disabled のスタイルは後日対応 */
 .Input__text:disabled {
   color: #6b7280;
+
   cursor: not-allowed;
+
   background-color: #f3f4f6;
   opacity: 1;
 }
@@ -194,6 +212,7 @@
   grid-template-columns: var(--icon-block-size) minmax(0, 1fr);
   gap: var(--spacing-sm);
   align-items: center;
+
   inline-size: fit-content;
   min-block-size: 44px;
 }
@@ -201,19 +220,23 @@
 .Checkbox__label {
   grid-row: 1;
   grid-column: 2;
+
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-base);
   color: var(--text-color-base);
+
   cursor: pointer;
 }
 
 .Checkbox__input {
   grid-row: 1;
   grid-column: 1;
+
   inline-size: var(--icon-block-size);
   block-size: var(--icon-block-size);
   margin: 0;
+
   accent-color: var(--primary-color);
   cursor: pointer;
 }
@@ -225,6 +248,7 @@
 
 .Checkbox:has(.Checkbox__input:disabled) {
   color: var(--text-color-secondary);
+
   opacity: 0.6;
 }
 
@@ -240,33 +264,41 @@
 .Select {
   display: block grid;
   gap: var(--spacing-sm);
+
   inline-size: 100%;
 }
 
 .Select__label {
   inline-size: fit-content;
+
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-base);
   color: var(--text-color-base);
+
   cursor: pointer;
 }
 
 .Select__input {
   grid-row: 2;
   grid-column: 1;
+
   inline-size: 100%;
   min-block-size: 44px;
   padding-block: var(--spacing-sm);
   padding-inline: var(--spacing-md) calc(var(--spacing-md) + var(--icon-block-size));
+
   font: inherit;
   line-height: var(--line-height-base);
   color: var(--text-color-base);
+
   appearance: none;
   cursor: pointer;
+
   background-color: var(--background-color-surface);
   border: 1px solid var(--border-color-base);
   border-radius: var(--border-radius-md);
+
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
@@ -277,13 +309,17 @@
   grid-row: 2;
   grid-column: 1;
   place-self: center end;
+
   inline-size: var(--spacing-sm);
   block-size: var(--spacing-sm);
   margin-inline-end: var(--spacing-md);
+
   pointer-events: none;
   content: "";
+
   border-block-end: 2px solid var(--primary-color);
   border-inline-end: 2px solid var(--primary-color);
+
   transform: translateY(-25%) rotate(45deg);
 }
 
@@ -294,18 +330,22 @@
 .Select__input:focus-visible {
   outline: 3px solid var(--primary-color);
   outline-offset: 1px;
+
   border-color: var(--primary-color);
 }
 
 .Select__input:disabled {
   color: var(--text-color-secondary);
+
   cursor: not-allowed;
+
   background-color: var(--primary-color-light);
   opacity: 1;
 }
 
 .Select:has(.Select__input:disabled) .Select__label {
   color: var(--text-color-secondary);
+
   cursor: not-allowed;
 }
 
@@ -328,6 +368,7 @@
 
 .Card {
   padding: var(--spacing-sm) var(--spacing-md);
+
   background-color: var(--background-color-surface);
   border: 1px solid var(--border-color-primary);
   border-radius: var(--border-radius-md);
