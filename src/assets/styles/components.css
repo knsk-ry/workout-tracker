@@ -91,7 +91,7 @@
 }
 
 .Button:focus-visible {
-  outline: 3px solid var(--focus-color);
+  outline: 3px solid var(--primary-color);
   outline-offset: 3px;
 }
 
@@ -223,7 +223,7 @@
 }
 
 .Checkbox__input:focus-visible {
-  outline: 3px solid var(--focus-color);
+  outline: 3px solid var(--primary-color);
   outline-offset: var(--spacing-xs);
 }
 
@@ -235,6 +235,106 @@
 .Checkbox__input:disabled,
 .Checkbox__input:disabled + .Checkbox__label {
   cursor: not-allowed;
+}
+
+/* ------------------------------
+ * Select
+ */
+
+.Select {
+  display: block grid;
+  gap: var(--spacing-sm);
+  inline-size: 100%;
+}
+
+.Select__label {
+  inline-size: fit-content;
+  color: var(--text-color-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-base);
+  cursor: pointer;
+}
+
+.Select__input {
+  grid-column: 1;
+  grid-row: 2;
+
+  inline-size: 100%;
+  min-block-size: 44px;
+  padding-block: var(--spacing-sm);
+  padding-inline:
+    var(--spacing-md)
+    calc(var(--spacing-md) + var(--icon-block-size));
+
+  color: var(--text-color-base);
+  background-color: var(--background-color-surface);
+  border: 1px solid var(--border-color-base);
+  border-radius: var(--border-radius-md);
+
+  font: inherit;
+  line-height: var(--line-height-base);
+
+  appearance: none;
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* 矢印 */
+.Select::after {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: center;
+  justify-self: end;
+
+  inline-size: var(--spacing-sm);
+  block-size: var(--spacing-sm);
+  margin-inline-end: var(--spacing-md);
+
+  border-inline-end: 2px solid var(--primary-color);
+  border-block-end: 2px solid var(--primary-color);
+
+  content: "";
+  pointer-events: none;
+  transform: translateY(-25%) rotate(45deg);
+}
+
+.Select__input:hover:not(:disabled) {
+  border-color: var(--primary-color);
+}
+
+.Select__input:focus-visible {
+  border-color: var(--primary-color);
+  outline: 3px solid var(--primary-color);
+  outline-offset: 1px;
+}
+
+.Select__input:disabled {
+  color: var(--text-color-secondary);
+  background-color: var(--primary-color-light);
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.Select:has(.Select__input:disabled) .Select__label {
+  color: var(--text-color-secondary);
+  cursor: not-allowed;
+}
+
+.Select:has(.Select__input:disabled)::after {
+  border-color: var(--text-color-secondary);
+}
+
+/* エラー状態 */
+.Select__input[aria-invalid="true"] {
+  border-color: var(--error-color);
+}
+
+.Select__input[aria-invalid="true"]:focus-visible {
+  outline-color: var(--error-color);
 }
 
 /* ------------------------------
