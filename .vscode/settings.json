@@ -1,0 +1,29 @@
+{
+  // Formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.requireConfig": true,
+
+  // Indent
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+
+  // File
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+
+  // Editor
+  "editor.rulers": [100],
+  "editor.renderWhitespace": "boundary",
+  "editor.guides.indentation": true,
+  "editor.bracketPairColorization.enabled": true,
+
+  // Search
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/storybook-static": true
+  }
+}
