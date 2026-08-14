@@ -188,6 +188,56 @@
 }
 
 /* ------------------------------
+ * Checkbox
+ */
+
+.Checkbox {
+  display: block grid;
+  grid-template-columns: var(--icon-block-size) minmax(0, 1fr);
+  gap: var(--spacing-sm);
+  align-items: center;
+  inline-size: fit-content;
+  min-block-size: 44px;
+}
+
+.Checkbox__label {
+  grid-column: 2;
+  grid-row: 1;
+  color: var(--text-color-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-base);
+  cursor: pointer;
+}
+
+.Checkbox__input {
+  grid-column: 1;
+  grid-row: 1;
+
+  inline-size: var(--icon-block-size);
+  block-size: var(--icon-block-size);
+  margin: 0;
+
+  accent-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.Checkbox__input:focus-visible {
+  outline: 3px solid var(--focus-color);
+  outline-offset: var(--spacing-xs);
+}
+
+.Checkbox:has(.Checkbox__input:disabled) {
+  color: var(--text-color-secondary);
+  opacity: 0.6;
+}
+
+.Checkbox__input:disabled,
+.Checkbox__input:disabled + .Checkbox__label {
+  cursor: not-allowed;
+}
+
+/* ------------------------------
  *  Column
  */
 
