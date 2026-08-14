@@ -86,7 +86,7 @@
 
 @media (hover: hover) and (pointer: fine) {
   .Button:not(:disabled):hover {
-    opacity: .85;
+    opacity: 0.85;
   }
 }
 
@@ -96,7 +96,7 @@
 }
 
 .Button:disabled {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .Button__icon {
@@ -263,9 +263,7 @@
   inline-size: 100%;
   min-block-size: 44px;
   padding-block: var(--spacing-sm);
-  padding-inline:
-    var(--spacing-md)
-    calc(var(--spacing-md) + var(--icon-block-size));
+  padding-inline: var(--spacing-md) calc(var(--spacing-md) + var(--icon-block-size));
 
   color: var(--text-color-base);
   background-color: var(--background-color-surface);
@@ -346,7 +344,7 @@
   background-color: var(--background-color-surface);
   border: 1px solid var(--border-color-primary);
   border-radius: var(--border-radius-md);
-  
+
   @media (min-width: 64.0625rem) {
     padding: var(--spacing-md) var(--spacing-lg);
   }
@@ -359,7 +357,7 @@
 .ColumnLayout {
   display: block grid;
   gap: var(--spacing-md);
-  
+
   @media (min-width: 64.0625rem) {
     gap: var(--spacing-lg);
   }
@@ -367,7 +365,7 @@
 
 .ColumnLayout:not(:first-child) {
   margin-block-start: var(--spacing-md);
-  
+
   @media (min-width: 64.0625rem) {
     margin-block-start: var(--spacing-lg);
   }

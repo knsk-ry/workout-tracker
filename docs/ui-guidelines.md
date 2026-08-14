@@ -11,15 +11,15 @@
 
 ## 2. Colors
 
-| Role | Color | Usage |
-|---|---|---|
-| Background | #F8F7F3 | ページ背景 |
-| Surface | #FFFDF8 | カード・フォーム |
-| Text Primary | #292722 | 見出し・本文 |
-| Text Secondary | #6F6B63 | 補足 |
-| Primary | #35785A | ボタン・チェック状態 |
-| Primary Light | #E5F0E9 | 選択状態・背景 |
-| Border | #DDD9D0 | 枠線 |
+| Role           | Color   | Usage                |
+| -------------- | ------- | -------------------- |
+| Background     | #F8F7F3 | ページ背景           |
+| Surface        | #FFFDF8 | カード・フォーム     |
+| Text Primary   | #292722 | 見出し・本文         |
+| Text Secondary | #6F6B63 | 補足                 |
+| Primary        | #35785A | ボタン・チェック状態 |
+| Primary Light  | #E5F0E9 | 選択状態・背景       |
+| Border         | #DDD9D0 | 枠線                 |
 
 ## 3. Typography
 

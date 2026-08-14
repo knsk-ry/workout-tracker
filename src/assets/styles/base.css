@@ -3,100 +3,102 @@
  */
 
 :root {
-    /* Background Colors */
-    --background-color-base: #FBFAF7;
-    --background-color-surface: #FFFEFC;
+  /* Background Colors */
+  --background-color-base: #fbfaf7;
+  --background-color-surface: #fffefc;
 
-    /* Text Colors */
-    --text-color-base: #292722;
-    --text-color-secondary: #6F6B63;
-    --text-color-surface: #FBFAF7;
+  /* Text Colors */
+  --text-color-base: #292722;
+  --text-color-secondary: #6f6b63;
+  --text-color-surface: #fbfaf7;
 
-    /* Border Colors */
-    --border-color-base: #E5E0D7;
-    --border-color-surface: #EDF5F0;
-    --border-color-primary: #35785A;
+  /* Border Colors */
+  --border-color-base: #e5e0d7;
+  --border-color-surface: #edf5f0;
+  --border-color-primary: #35785a;
 
-    /* Primary Colors */
-    --primary-color: #35785A;
-    --primary-color-light: #EDF5F0;
+  /* Primary Colors */
+  --primary-color: #35785a;
+  --primary-color-light: #edf5f0;
 
-    /* Success */
-    --success-color: #3F8A5C;
+  /* Success */
+  --success-color: #3f8a5c;
 
-    /* Warning */
-    --warning-color: #C78C2D;
+  /* Warning */
+  --warning-color: #c78c2d;
 
-    /* Error */
-    --error-color: #C24B43;
+  /* Error */
+  --error-color: #c24b43;
 
-    /* Focus */
-    --focus-color: #5B9CFF;
+  /* Focus */
+  --focus-color: #5b9cff;
 
-    /* Font */
-    --font-family-base: 'Noto Sans JP','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',YuGothic,'Yu Gothic',sans-serif;
-    --line-height-base: 1.5;
+  /* Font */
+  --font-family-base:
+    "Noto Sans JP", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", YuGothic, "Yu Gothic",
+    sans-serif;
+  --line-height-base: 1.5;
 
-    /* Font Sizes */
-    --font-size-sm: 0.75rem; /* 12px */
-    --font-size-base: 1rem; /* 16px */
-    --font-size-md: 1.125rem; /* 18px */
-    --font-size-lg: 1.25rem; /* 20px */
-    --font-size-xl: 1.5rem; /* 24px */
+  /* Font Sizes */
+  --font-size-sm: 0.75rem; /* 12px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-md: 1.125rem; /* 18px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-xl: 1.5rem; /* 24px */
 
-    --font-size-heading-lv1: 1.625rem; /* 26px */
-    --font-size-heading-lv2: 1.375rem; /* 22px */
-    --font-size-heading-lv3: 1.125rem; /* 18px */
+  --font-size-heading-lv1: 1.625rem; /* 26px */
+  --font-size-heading-lv2: 1.375rem; /* 22px */
+  --font-size-heading-lv3: 1.125rem; /* 18px */
 
-    /* Font Weights */
-    --font-weight-regular: 400;
-    --font-weight-bold: 700;
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
 
-    /* Spacing */
-    --spacing-xs: 0.25rem; /* 4px */
-    --spacing-sm: 0.5rem; /* 8px */
-    --spacing-md: 1rem; /* 16px */
-    --spacing-lg: 1.5rem; /* 24px */
-    --spacing-xl: 2rem; /* 32px */
-    --spacing-xxl: 3rem; /* 48px */
-    --spacing-xxxl: 4rem; /* 64px */
+  /* Spacing */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem; /* 8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-xxl: 3rem; /* 48px */
+  --spacing-xxxl: 4rem; /* 64px */
 
-    /* Border Radius */
-    --border-radius-sm: 0.25rem; /* 4px */
-    --border-radius-md: 0.5rem; /* 8px */
-    --border-radius-lg: 0.75rem; /* 12px */
-    --border-radius-xl: 1rem; /* 16px */
+  /* Border Radius */
+  --border-radius-sm: 0.25rem; /* 4px */
+  --border-radius-md: 0.5rem; /* 8px */
+  --border-radius-lg: 0.75rem; /* 12px */
+  --border-radius-xl: 1rem; /* 16px */
 
-    /* Shadow */
-    --shadow-top-sm: 0 -1px 2px rgb(0 0 0 / 0.04);
-    --shadow-top-md: 0 -2px 8px rgb(0 0 0 / 0.06);
-    --shadow-top-lg: 0 -8px 24px rgb(0 0 0 / 0.08);
+  /* Shadow */
+  --shadow-top-sm: 0 -1px 2px rgb(0 0 0 / 0.04);
+  --shadow-top-md: 0 -2px 8px rgb(0 0 0 / 0.06);
+  --shadow-top-lg: 0 -8px 24px rgb(0 0 0 / 0.08);
 
-    --shadow-bottom-sm: 0 1px 2px rgb(0 0 0 / 0.04);
-    --shadow-bottom-md: 0 2px 8px rgb(0 0 0 / 0.06);
-    --shadow-bottom-lg: 0 8px 24px rgb(0 0 0 / 0.08);
+  --shadow-bottom-sm: 0 1px 2px rgb(0 0 0 / 0.04);
+  --shadow-bottom-md: 0 2px 8px rgb(0 0 0 / 0.06);
+  --shadow-bottom-lg: 0 8px 24px rgb(0 0 0 / 0.08);
 
-    /* Z-Index */
-    --z-index-navigation: 1000;
-    --z-index-modal: 2000;
+  /* Z-Index */
+  --z-index-navigation: 1000;
+  --z-index-modal: 2000;
 
-    /* Block Sizes */
-    --navigation-block-size: 2.75rem; /* 44px */
-    --icon-block-size: 1.25rem; /* 20px */
+  /* Block Sizes */
+  --navigation-block-size: 2.75rem; /* 44px */
+  --icon-block-size: 1.25rem; /* 20px */
 
-    @media (min-width: 64.0625rem) {
-      --font-size-sm: 0.875rem; /* 14px */
-      --font-size-base: 1.125rem; /* 18px */
-      --font-size-md: 1.25rem; /* 20px */
-      --font-size-lg: 1.375rem; /* 22px */
-      --font-size-xl: 1.625rem; /* 26px */
+  @media (min-width: 64.0625rem) {
+    --font-size-sm: 0.875rem; /* 14px */
+    --font-size-base: 1.125rem; /* 18px */
+    --font-size-md: 1.25rem; /* 20px */
+    --font-size-lg: 1.375rem; /* 22px */
+    --font-size-xl: 1.625rem; /* 26px */
 
-      --font-size-heading-lv1: 1.75rem; /* 28px */
-      --font-size-heading-lv2: 1.5rem; /* 24px */
-      --font-size-heading-lv3: 1.25rem; /* 20px */
+    --font-size-heading-lv1: 1.75rem; /* 28px */
+    --font-size-heading-lv2: 1.5rem; /* 24px */
+    --font-size-heading-lv3: 1.25rem; /* 20px */
 
-      --navigation-block-size: 3.75rem; /* 60px */
-    }
+    --navigation-block-size: 3.75rem; /* 60px */
+  }
 }
 
 /* ------------------------------

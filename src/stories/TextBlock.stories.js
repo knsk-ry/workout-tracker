@@ -1,7 +1,4 @@
-const createTextBlock = ({
-  spaceSize,
-  label = "テキスト",
-}) => {
+const createTextBlock = ({ spaceSize, label = "テキスト" }) => {
   return `<div class="TextBlock ${spaceSize}">
       <p class="Text">${label}</p>
     </div>`;
