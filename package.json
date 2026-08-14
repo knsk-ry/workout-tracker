@@ -11,16 +11,17 @@
     "build-storybook": "storybook build"
   },
   "devDependencies": {
-    "vite": "^8.2.0",
-    "storybook": "^10.5.7",
-    "@storybook/html-vite": "^10.5.7",
     "@chromatic-com/storybook": "latest",
-    "@storybook/addon-vitest": "^10.5.7",
     "@storybook/addon-a11y": "^10.5.7",
     "@storybook/addon-docs": "^10.5.7",
-    "vitest": "latest",
-    "playwright": "latest",
+    "@storybook/addon-vitest": "^10.5.7",
+    "@storybook/html-vite": "^10.5.7",
     "@vitest/browser-playwright": "latest",
-    "@vitest/coverage-v8": "latest"
+    "@vitest/coverage-v8": "latest",
+    "playwright": "latest",
+    "prettier": "3.9.6",
+    "storybook": "^10.5.7",
+    "vite": "^8.2.0",
+    "vitest": "latest"
   }
 }
